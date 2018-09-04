@@ -1,7 +1,8 @@
-#!/usr/bin/env python
-import pygtk
+#!/usr/bin/env python3
+from gi import pygtkcompat
+pygtkcompat.enable()
+pygtkcompat.enable_gtk(version='3.0')
 
-pygtk.require('2.0')
 import gtk
 
 class SimpleTextInput:
